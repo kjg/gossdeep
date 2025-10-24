@@ -2,6 +2,7 @@ package ssdeep
 
 /*
 #cgo !windows LDFLAGS:-L/usr/local/lib/ -lfuzzy -ldl -I/usr/local/include/
+#cgo darwin && arm64 LDFLAGS:-L/opt/homebrew/opt/ssdeep/lib
 #include <stdlib.h>
 #include <fuzzy.h>
 */
